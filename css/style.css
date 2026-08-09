@@ -70,18 +70,19 @@ a:hover { background: var(--green); color: #000; }
   z-index: -1;
   background:
     linear-gradient(to bottom,
-      rgba(5, 5, 5, 0.6),
-      rgba(5, 5, 5, 0.75) 55%,
+      rgba(5, 5, 5, 0.25),
+      rgba(5, 5, 5, 0.35) 55%,
       var(--bg) 96%),
     url("../images/IMG_1627.jpg") center 62% / cover no-repeat;
-  filter: saturate(1.15) contrast(1.05);
+  filter: saturate(1.15) contrast(1.05) brightness(1.08);
 }
 
 .hero-pre {
-  color: var(--text-dim);
+  color: var(--text);
   letter-spacing: 0.3em;
   font-size: 0.8rem;
   margin-bottom: 1rem;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.9);
 }
 
 .glitch {
@@ -130,7 +131,10 @@ a:hover { background: var(--green); color: #000; }
 .hero-sub {
   margin-top: 1.5rem;
   font-size: clamp(0.85rem, 2.5vw, 1.1rem);
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.9);
 }
+
+.nav a { text-shadow: 0 1px 6px rgba(0, 0, 0, 0.9); }
 
 .prompt { color: var(--magenta); }
 
