@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DEF CON 34 // franpolignano</title>
+  <meta name="description" content="My DEF CON 34 recap — talks, villages, photos, and notes from Las Vegas.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💀</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <canvas id="matrix"></canvas>
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <header class="hero">
+    <p class="hero-pre">// LAS VEGAS, NV — AUG 6-9 2026</p>
+    <h1 class="glitch" data-text="DEF CON 34">DEF CON 34</h1>
+    <p class="hero-sub">
+      <span class="prompt">fran@defcon34:~$</span>
+      <span id="typed"></span><span class="cursor">█</span>
+    </p>
+    <nav class="nav">
+      <a href="#summary">[ summary ]</a>
+      <a href="#talks">[ talks ]</a>
+      <a href="#photos">[ photos ]</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ================= SUMMARY ================= -->
+    <section id="summary">
+      <h2><span class="section-num">01</span> ./summary</h2>
+      <div class="terminal-box">
+        <div class="terminal-header">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <span class="terminal-title">cat summary.txt</span>
+        </div>
+        <div class="terminal-body">
+          <!-- EDIT ME: Replace this with your actual DEF CON recap -->
+          <p>
+            First time / Nth time at DEF CON — four days of talks, villages,
+            badge hacking, and wandering the halls of the Las Vegas Convention
+            Center. This is my recap of what I did, what I learned, and what
+            I'm bringing home to the homelab.
+          </p>
+          <p>
+            Highlights: <span class="hl">the villages</span>,
+            <span class="hl">the badge</span>, and
+            <span class="hl">meeting people way smarter than me</span>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TALKS ================= -->
+    <section id="talks">
+      <h2><span class="section-num">02</span> ./talks_attended</h2>
+
+      <!-- EDIT ME: Duplicate this .talk-card block for each talk you went to -->
+      <article class="talk-card">
+        <div class="talk-meta">
+          <span class="tag">TRACK 1</span>
+          <time datetime="2026-08-07">FRI 08.07</time>
+        </div>
+        <h3>Talk Title Goes Here</h3>
+        <p class="talk-speaker">&gt; speaker: Speaker Name</p>
+        <p>
+          A few sentences about the talk — what it covered, what stood out,
+          and any tools or techniques worth remembering.
+        </p>
+      </article>
+
+      <article class="talk-card">
+        <div class="talk-meta">
+          <span class="tag magenta">VILLAGE</span>
+          <time datetime="2026-08-08">SAT 08.08</time>
+        </div>
+        <h3>Another Talk or Village Session</h3>
+        <p class="talk-speaker">&gt; speaker: Speaker Name</p>
+        <p>
+          Notes on this one. Link out to slides or the recording once
+          media.defcon.org has them posted.
+        </p>
+      </article>
+
+      <article class="talk-card">
+        <div class="talk-meta">
+          <span class="tag cyan">WORKSHOP</span>
+          <time datetime="2026-08-09">SUN 08.09</time>
+        </div>
+        <h3>Third Session Placeholder</h3>
+        <p class="talk-speaker">&gt; speaker: Speaker Name</p>
+        <p>
+          What you did hands-on, what broke, what you'd try again at home.
+        </p>
+      </article>
+    </section>
+
+    <!-- ================= PHOTOS ================= -->
+    <section id="photos">
+      <h2><span class="section-num">03</span> ./photos</h2>
+      <!-- EDIT ME: Drop your pictures into images/ and swap these placeholders:
+           <figure class="photo"><img src="images/badge.jpg" alt="DEF CON 34 badge"><figcaption>the badge</figcaption></figure>
+      -->
+      <div class="photo-grid">
+        <figure class="photo placeholder"><div class="ph">[ img_0001.jpg ]</div><figcaption>photo coming soon</figcaption></figure>
+        <figure class="photo placeholder"><div class="ph">[ img_0002.jpg ]</div><figcaption>photo coming soon</figcaption></figure>
+        <figure class="photo placeholder"><div class="ph">[ img_0003.jpg ]</div><figcaption>photo coming soon</figcaption></figure>
+        <figure class="photo placeholder"><div class="ph">[ img_0004.jpg ]</div><figcaption>photo coming soon</figcaption></figure>
+        <figure class="photo placeholder"><div class="ph">[ img_0005.jpg ]</div><figcaption>photo coming soon</figcaption></figure>
+        <figure class="photo placeholder"><div class="ph">[ img_0006.jpg ]</div><figcaption>photo coming soon</figcaption></figure>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&gt; EOF — <a href="https://franpolignano.com">franpolignano.com</a></p>
+    <p class="footer-small">no signal is safe // defcon34.franpolignano.com</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
