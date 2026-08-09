@@ -54,7 +54,22 @@ h1 {
 
 .byline { color: var(--muted); }
 
-header { margin-bottom: 3.5rem; }
+header { margin-bottom: 2.5rem; }
+
+/* ---------- lead photo ---------- */
+.lead-photo { margin-bottom: 3.5rem; }
+
+.lead-photo img {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+}
+
+.lead-photo figcaption {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-top: 0.5rem;
+}
 
 /* ---------- sections ---------- */
 section { margin-bottom: 3.5rem; }
