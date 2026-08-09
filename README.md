@@ -7,10 +7,12 @@ Lives at [defcon34.franpolignano.com](https://defcon34.franpolignano.com).
 ## Structure
 
 - `index.html` — the whole site (summary, talks, photo gallery)
-- `css/style.css` — DEF CON terminal/CRT styling
-- `js/main.js` — typed prompt + matrix rain effects
+- `css/style.css` — minimal blog styling (light/dark via system preference)
 - `images/` — drop photos here, then swap the placeholders in `index.html`
 - `CNAME` — custom domain for GitHub Pages
+
+This branch (`minimal`) is the clean, simple design option; `main` has the
+flashier DEF CON terminal/glitch design.
 
 ## Editing
 
