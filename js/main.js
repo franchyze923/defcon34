@@ -1,37 +1,29 @@
-// ---------- typed hero line ----------
-const lines = [
-  "cat defcon34_recap.txt",
-  "ls talks/ villages/ photos/",
-  "whoami && echo 'hacker adjacent'",
-  "sudo tell_me_everything --year 2026",
-];
+// ---------- photo lightbox ----------
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = lightbox.querySelector("img");
+const lightboxCaption = lightbox.querySelector("figcaption");
 
-const typedEl = document.getElementById("typed");
-let lineIdx = 0;
-let charIdx = 0;
-let deleting = false;
+document.querySelectorAll(".photo img").forEach((img) => {
+  img.addEventListener("click", () => {
+    lightboxImg.src = img.src;
+    lightboxImg.alt = img.alt;
+    const caption = img.closest(".photo").querySelector("figcaption");
+    lightboxCaption.textContent = caption ? caption.textContent : "";
+    lightbox.hidden = false;
+    document.body.style.overflow = "hidden";
+  });
+});
 
-function typeLoop() {
-  const line = lines[lineIdx];
-
-  if (!deleting) {
-    typedEl.textContent = line.slice(0, ++charIdx);
-    if (charIdx === line.length) {
-      deleting = true;
-      setTimeout(typeLoop, 2200);
-      return;
-    }
-    setTimeout(typeLoop, 55 + Math.random() * 60);
-  } else {
-    typedEl.textContent = line.slice(0, --charIdx);
-    if (charIdx === 0) {
-      deleting = false;
-      lineIdx = (lineIdx + 1) % lines.length;
-    }
-    setTimeout(typeLoop, 25);
-  }
+function closeLightbox() {
+  lightbox.hidden = true;
+  lightboxImg.src = "";
+  document.body.style.overflow = "";
 }
-typeLoop();
+
+lightbox.addEventListener("click", closeLightbox);
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && !lightbox.hidden) closeLightbox();
+});
 
 // ---------- matrix rain ----------
 const canvas = document.getElementById("matrix");
