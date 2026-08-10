@@ -33,7 +33,6 @@
           <span class="terminal-title">cat summary.txt</span>
         </div>
         <div class="terminal-body">
-          <!-- EDIT ME: Replace this with your actual DEF CON recap -->
           <p>
             First time at DEF CON — four days of talks, villages,
             badge hacking, and wandering the halls of the Las Vegas Convention
@@ -42,7 +41,7 @@
           </p>
           <p>
             Highlights: <span class="hl">the villages</span> and
-            <span class="hl">the badge</span>.
+            <span class="hl">the talks</span>.
           </p>
         </div>
       </div>
@@ -59,7 +58,7 @@
         <h3>Got My Ham Radio Technician License</h3>
         <p>
           Took the FCC Technician exam at DEF CON and passed — officially
-          licensed to get on the air. Time to put that Baofeng to work.
+          licensed to get on the air.
         </p>
       </article>
 
@@ -91,6 +90,13 @@
           shipped with signatures and SBOMs. Non-root by default, shell-less
           where possible — way less attack surface than stock images. Definitely
           trying these in the homelab.
+        </p>
+        <p>
+          Also learned that
+          <a href="https://kubernetes.io/docs/tasks/debug/debug-application/debug-running-pod/" target="_blank" rel="noopener"><span class="hl">kubectl debug</span></a>
+          is a thing — it attaches an ephemeral debug container to a running
+          pod, so you can still troubleshoot these shell-less images without
+          baking a shell (and its attack surface) back in.
         </p>
       </article>
 
