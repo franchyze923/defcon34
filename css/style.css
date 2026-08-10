@@ -225,6 +225,23 @@ h2 {
 
 .talk-card p + p { margin-top: 0.8rem; }
 
+.talk-card ul {
+  list-style: none;
+  margin: 0.8rem 0;
+}
+
+.talk-card li {
+  padding-left: 1.4rem;
+  text-indent: -1.4rem;
+}
+
+.talk-card li + li { margin-top: 0.4rem; }
+
+.talk-card li::before {
+  content: ">> ";
+  color: var(--green);
+}
+
 .talk-speaker {
   color: var(--magenta);
   font-size: 0.85rem;
