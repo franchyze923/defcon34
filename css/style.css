@@ -70,6 +70,14 @@ a:hover { background: var(--green); color: #000; }
   filter: saturate(1.15) contrast(1.05) brightness(1.16);
 }
 
+/* on narrow screens the cover crop cuts the sides off the sign photo —
+   bias it right so the person next to the sign stays in frame */
+@media (max-width: 700px) {
+  .hero::before {
+    background-position: center, 80% 62%;
+  }
+}
+
 .hero-pre {
   color: var(--text);
   letter-spacing: 0.3em;
