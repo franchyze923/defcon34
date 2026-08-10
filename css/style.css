@@ -248,6 +248,60 @@ h2 {
   margin-bottom: 0.6rem;
 }
 
+/* ---------- ride viz ---------- */
+.ride-viz {
+  background: #050805;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.9rem 1rem;
+  margin-top: 0.9rem;
+}
+
+.viz-label {
+  color: var(--text-dim);
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  margin: 0 0 0.4rem;
+}
+
+.route-svg,
+.ele-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.route-path {
+  fill: none;
+  stroke: var(--green);
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  filter: drop-shadow(0 0 4px rgba(0, 255, 65, 0.6));
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+}
+
+.ride-viz.drawn .route-path {
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset 6s ease-out;
+}
+
+.rider {
+  filter: drop-shadow(0 0 6px rgba(5, 217, 232, 0.9));
+}
+
+.ride-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.75rem;
+  margin: 0.9rem 0;
+  color: var(--text-dim);
+  font-size: 0.85rem;
+}
+
+.ride-stats b { color: var(--cyan); font-weight: 700; }
+
 /* ---------- photo grid ---------- */
 .photo-grid {
   display: grid;

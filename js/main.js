@@ -24,3 +24,20 @@ lightbox.addEventListener("click", closeLightbox);
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape" && !lightbox.hidden) closeLightbox();
 });
+
+// ---------- ride trace draw-in ----------
+const rideViz = document.querySelector(".ride-viz");
+if (rideViz) {
+  const obs = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          rideViz.classList.add("drawn");
+          obs.disconnect();
+        }
+      });
+    },
+    { threshold: 0.25 }
+  );
+  obs.observe(rideViz);
+}
