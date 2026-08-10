@@ -29,14 +29,6 @@ body {
 a { color: var(--green); text-decoration: none; }
 a:hover { background: var(--green); color: #000; }
 
-/* ---------- matrix rain canvas ---------- */
-#matrix {
-  position: fixed;
-  inset: 0;
-  z-index: -2;
-  opacity: 0.35;
-}
-
 /* ---------- CRT scanlines overlay ---------- */
 .scanlines {
   position: fixed;
@@ -54,7 +46,7 @@ a:hover { background: var(--green); color: #000; }
 /* ---------- hero ---------- */
 .hero {
   position: relative;
-  min-height: 92vh;
+  min-height: 78vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
